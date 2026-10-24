@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bgGrad)" />
+  <!-- Deer Mascot Face -->
+  <circle cx="64" cy="74" r="34" fill="#ffedd5" />
+  <!-- Ears -->
+  <ellipse cx="40" cy="46" rx="9" ry="18" fill="#d97706" transform="rotate(-25 40 46)" />
+  <ellipse cx="40" cy="46" rx="5" ry="12" fill="#fed7aa" transform="rotate(-25 40 46)" />
+  <ellipse cx="88" cy="46" rx="9" ry="18" fill="#d97706" transform="rotate(25 88 46)" />
+  <ellipse cx="88" cy="46" rx="5" ry="12" fill="#fed7aa" transform="rotate(25 88 46)" />
+  <!-- Antlers (Friendly stylized) -->
+  <path d="M 48 38 Q 40 20 32 22 Q 40 28 46 34" stroke="#78350f" stroke-width="3.5" fill="none" stroke-linecap="round" />
+  <path d="M 80 38 Q 88 20 96 22 Q 88 28 82 34" stroke="#78350f" stroke-width="3.5" fill="none" stroke-linecap="round" />
+  <!-- Eyes -->
+  <circle cx="52" cy="70" r="5" fill="#1c1917" />
+  <circle cx="76" cy="70" r="5" fill="#1c1917" />
+  <circle cx="50.5" cy="68.5" r="1.8" fill="#ffffff" />
+  <circle cx="74.5" cy="68.5" r="1.8" fill="#ffffff" />
+  <!-- Cheeks -->
+  <circle cx="43" cy="78" r="4.5" fill="#f87171" opacity="0.6" />
+  <circle cx="85" cy="78" r="4.5" fill="#f87171" opacity="0.6" />
+  <!-- Snout & Nose -->
+  <ellipse cx="64" cy="82" rx="10" ry="7" fill="#ffffff" />
+  <path d="M 61 79 Q 64 77 67 79 Q 64 83 61 79 Z" fill="#991b1b" />
+  <!-- Smile -->
+  <path d="M 59 86 Q 64 90 69 86" stroke="#991b1b" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <!-- Sohrai Tribal dot pattern on forehead -->
+  <circle cx="64" cy="55" r="2.5" fill="#15803d" />
+  <circle cx="58" cy="55" r="1.8" fill="#ea580c" />
+  <circle cx="70" cy="55" r="1.8" fill="#ea580c" />
+</svg>

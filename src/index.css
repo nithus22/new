@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Noto Sans Warang Chiti';
+  src: url('/fonts/NotoSansWarangCiti-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans Warang Citi';
+  src: url('/fonts/NotoSansWarangCiti-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --font-cartoon: 'Baloo 2', 'Noto Sans Ol Chiki', 'Noto Sans Warang Chiti', 'Noto Sans Warang Citi', 'Noto Sans Devanagari', 'Fredoka', cursive, sans-serif;
+    --font-olchiki: 'Noto Sans Ol Chiki', 'Baloo 2', sans-serif;
+    --font-warangchiti: 'Noto Sans Warang Chiti', 'Noto Sans Warang Citi', 'Baloo 2', sans-serif;
+    --font-devanagari: 'Baloo 2', 'Noto Sans Devanagari', sans-serif;
+  }
+
+  body {
+    font-family: 'Baloo 2', 'Noto Sans Ol Chiki', 'Noto Sans Warang Chiti', 'Noto Sans Warang Citi', 'Noto Sans Devanagari', 'Fredoka', cursive, sans-serif;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom script fonts */
+.font-olchiki {
+  font-family: 'Noto Sans Ol Chiki', 'Baloo 2', sans-serif;
+}
+
+.font-warangchiti {
+  font-family: 'Noto Sans Warang Chiti', 'Noto Sans Warang Citi', 'Baloo 2', sans-serif;
+}
+
+.font-devanagari {
+  font-family: 'Baloo 2', 'Noto Sans Devanagari', sans-serif;
+}
+
+.font-cartoon {
+  font-family: 'Baloo 2', 'Noto Sans Ol Chiki', 'Noto Sans Warang Chiti', 'Noto Sans Warang Citi', 'Noto Sans Devanagari', 'Fredoka', cursive, sans-serif;
+}
+
+/* Children's Cartoon Floating & Bouncing Animations */
+@keyframes gentle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes float-cloud {
+  0% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+}
+
+.animate-gentle-bounce {
+  animation: gentle-bounce 2.6s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 1.2s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-cloud 20s ease-in-out infinite;
+}
+
+/* Touch friendly button active press feedback */
+.press-bounce {
+  transition: transform 0.1s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.1s ease;
+}
+.press-bounce:active {
+  transform: translateY(4px) scale(0.97);
+}
+
+/* High contrast mode */
+.high-contrast {
+  filter: contrast(135%);
+}
+
+.high-contrast * {
+  border-width: max(2px, border-width) !important;
+}
+
+/* Accessibility: reduce motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fef3c7;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f59e0b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}

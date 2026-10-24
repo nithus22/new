@@ -1,0 +1,18 @@
+{
+  "name": "Bhasha Setu - भाषा सेतु",
+  "short_name": "Bhasha Setu",
+  "description": "Mother-tongue learning app for Jharkhand primary schools (Classes 1-5) in Santali, Ho, and Mundari.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fef3c7",
+  "theme_color": "#16a34a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
